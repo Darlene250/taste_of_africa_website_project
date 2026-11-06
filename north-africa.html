@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>North Africa | Tastes of Africa</title>
+  <meta name="description" content="Food culture, staples and signature dishes of North Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="west-africa.html">West Africa</a></li>
+          <li><a href="north-africa.html" aria-current="page">North Africa</a></li>
+          <li><a href="east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <h1>North Africa</h1>
+        <p>Slow-cooked stews, warm spices and fragrant breads.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section aria-labelledby="culture-title">
+        <h2 id="culture-title">Food culture</h2>
+        <p>North African food mixes Mediterranean, Arab and Amazigh (Berber) traditions. Wheat is the heart of many meals, in the form of couscous and bread, while <mark>olive oil</mark>, dates and <mark>preserved lemons</mark> add flavour. Warm spices such as <mark>cumin</mark>, <mark>saffron</mark> and cinnamon perfume the stews.</p>
+      </section>
+
+      <section class="two-col" aria-label="Staples and techniques">
+        <div class="panel">
+          <h2>Staples</h2>
+          <ul class="tag-list">
+            <li>Wheat and couscous</li>
+            <li>Olives and olive oil</li>
+            <li>Dates</li>
+            <li>Chickpeas and lentils</li>
+            <li>Lamb and chicken</li>
+          </ul>
+          <h3>Key flavours</h3>
+          <ul class="tag-list">
+            <li><mark>Cumin</mark></li>
+            <li><mark>Saffron</mark></li>
+            <li><mark>Cinnamon</mark></li>
+            <li><mark>Paprika</mark></li>
+            <li><mark>Ras el hanout</mark></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Cooking techniques</h2>
+          <ul>
+            <li>Slow cooking in a clay tagine pot, which keeps the stew moist.</li>
+            <li>Steaming couscous several times so the grains become light and fluffy.</li>
+            <li>Preserving lemons in salt to give dishes a deep, tangy flavour.</li>
+            <li>Baking flatbreads in communal or home ovens.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="dishes-title">
+        <h2 id="dishes-title">Example dishes</h2>
+        <div class="card-grid">
+        <article class="card dish-card" data-region="north-africa" data-id="tagine">
+          <figure>
+            <img src="https://img.youtube.com/vi/HlXF0cTrKIY/hqdefault.jpg" alt="Chicken tagine, a Moroccan stew from North Africa" loading="lazy" width="480" height="360">
+            <figcaption>Chicken Tagine &ndash; Morocco</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Chicken Tagine</h3>
+            <p>A slow-cooked Moroccan stew with preserved lemon, olives and warm spices.</p>
+            <div class="card-actions">
+              <a class="btn" href="tagine.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="tagine" aria-pressed="false"><span class="heart" aria-hidden="true">&hearts;</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="watch-title">
+        <h2 id="watch-title">Watch and learn</h2>
+        <div class="two-col">
+          <div><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/HlXF0cTrKIY" title="Moroccan chicken tagine recipe video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="map-title">
+        <h2 id="map-title">Find it on the map</h2>
+        <div class="map"><iframe src="https://www.google.com/maps?q=Marrakech%2C+Morocco&amp;output=embed" title="Map of Marrakech, Morocco" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Tastes of Africa</h2>
+          <p>Celebrating the flavours, ingredients and stories of African food. A student web project.</p>
+          <p><a href="recipes.html">Recipes</a> &middot; <a href="about.html">About us</a> &middot; <a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form">
+            <div class="field-wrap">
+              <label for="newsletter-email">Your email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" role="status"></p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

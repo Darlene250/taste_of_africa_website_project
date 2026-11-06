@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>West Africa | Tastes of Africa</title>
+  <meta name="description" content="Food culture, staples and signature dishes of West Africa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="west-africa.html" aria-current="page">West Africa</a></li>
+          <li><a href="north-africa.html">North Africa</a></li>
+          <li><a href="east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <h1>West Africa</h1>
+        <p>Bold flavours, big pots and generous sharing.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section aria-labelledby="culture-title">
+        <h2 id="culture-title">Food culture</h2>
+        <p>West African cooking is known for its bold, layered flavours. Cooks build rich sauces from <mark>tomatoes</mark>, onions and <mark>scotch bonnet peppers</mark>, then simmer them with rice, beans, yams or cassava. Food is a social event here: big pots are made for family, friends and celebrations.</p>
+      </section>
+
+      <section class="two-col" aria-label="Staples and techniques">
+        <div class="panel">
+          <h2>Staples</h2>
+          <ul class="tag-list">
+            <li>Rice</li>
+            <li>Millet</li>
+            <li>Yam</li>
+            <li>Cassava</li>
+            <li>Plantain</li>
+            <li>Black-eyed peas</li>
+            <li>Groundnuts</li>
+          </ul>
+          <h3>Key flavours</h3>
+          <ul class="tag-list">
+            <li><mark>Scotch bonnet</mark></li>
+            <li><mark>Ginger</mark></li>
+            <li><mark>Thyme</mark></li>
+            <li><mark>Locust beans</mark></li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Cooking techniques</h2>
+          <ul>
+            <li>One-pot rice cooking, where the rice absorbs the sauce.</li>
+            <li>Slow-simmered stews and soups, often thickened with ground seeds or nuts.</li>
+            <li>Pounding yam or cassava into a smooth dough called fufu.</li>
+            <li>Grilling and smoking meat over open flames, such as suya skewers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-labelledby="dishes-title">
+        <h2 id="dishes-title">Example dishes</h2>
+        <div class="card-grid">
+        <article class="card dish-card" data-region="west-africa" data-id="jollof-rice">
+          <figure>
+            <img src="https://img.youtube.com/vi/EfZEArZcfAY/hqdefault.jpg" alt="Jollof rice, a West African rice dish from Nigeria" loading="lazy" width="480" height="360">
+            <figcaption>Jollof Rice &ndash; Nigeria</figcaption>
+          </figure>
+          <div class="card-body">
+            <h3>Jollof Rice</h3>
+            <p>A smoky one-pot rice cooked in a rich tomato and pepper sauce.</p>
+            <div class="card-actions">
+              <a class="btn" href="jollof-rice.html">View recipe</a>
+              <button type="button" class="fav-btn" data-id="jollof-rice" aria-pressed="false"><span class="heart" aria-hidden="true">&hearts;</span> Favorite</button>
+            </div>
+          </div>
+        </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="watch-title">
+        <h2 id="watch-title">Watch and learn</h2>
+        <div class="two-col">
+          <div><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/EfZEArZcfAY" title="Nigerian party jollof rice recipe video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></div>
+        </div>
+      </section>
+
+      <section aria-labelledby="map-title">
+        <h2 id="map-title">Find it on the map</h2>
+        <div class="map"><iframe src="https://www.google.com/maps?q=Lagos%2C+Nigeria&amp;output=embed" title="Map of Lagos, Nigeria" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Tastes of Africa</h2>
+          <p>Celebrating the flavours, ingredients and stories of African food. A student web project.</p>
+          <p><a href="recipes.html">Recipes</a> &middot; <a href="about.html">About us</a> &middot; <a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form">
+            <div class="field-wrap">
+              <label for="newsletter-email">Your email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" role="status"></p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

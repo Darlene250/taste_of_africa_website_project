@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Tastes of Africa</title>
+  <meta name="description" content="Get in touch with the Tastes of Africa team.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="west-africa.html">West Africa</a></li>
+          <li><a href="north-africa.html">North Africa</a></li>
+          <li><a href="east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>Questions, recipe ideas or a hello? We would love to hear from you.</p>
+      </div>
+    </div>
+
+    <section aria-labelledby="form-title">
+      <div class="container">
+        <h2 id="form-title" class="section-title">Send us a message</h2>
+
+        <form id="contact-form" class="form-card">
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </div>
+
+          <div class="form-field">
+            <label for="country">Country</label>
+            <select id="country" name="country" required>
+              <option value="" selected disabled>Choose your country</option>
+            <option value="Rwanda">Rwanda</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Kenya">Kenya</option>
+            <option value="Uganda">Uganda</option>
+            <option value="Tanzania">Tanzania</option>
+            <option value="Ethiopia">Ethiopia</option>
+            <option value="Morocco">Morocco</option>
+            <option value="Egypt">Egypt</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-field">
+            <label for="dish">Your favourite African dish (optional)</label>
+            <input type="text" id="dish" name="dish" list="dish-suggestions" autocomplete="off">
+            <datalist id="dish-suggestions">
+            <option value="Jollof Rice">
+            <option value="Injera">
+            <option value="Chicken Tagine">
+            <option value="Isombe">
+            <option value="Bunny Chow">
+            <option value="Ugali">
+            <option value="Couscous">
+            </datalist>
+            <p class="hint">Start typing to see suggestions.</p>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" aria-describedby="message-error" required></textarea>
+            <p class="hint">Please write more than 20 characters.</p>
+          </div>
+
+          <p id="message-error" class="error-msg" role="alert"></p>
+          <button type="submit" class="btn">Send message</button>
+        </form>
+
+        <div id="confirmation" class="confirmation hidden" tabindex="-1" role="status">
+          <h2>Message sent</h2>
+          <p id="confirmation-text"></p>
+          <a class="btn" href="index.html">Back to home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Tastes of Africa</h2>
+          <p>Celebrating the flavours, ingredients and stories of African food. A student web project.</p>
+          <p><a href="recipes.html">Recipes</a> &middot; <a href="about.html">About us</a> &middot; <a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form">
+            <div class="field-wrap">
+              <label for="newsletter-email">Your email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" role="status"></p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

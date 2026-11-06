@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Us | Tastes of Africa</title>
+  <meta name="description" content="Our mission to promote African food heritage and a short history of African cuisine.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a href="west-africa.html">West Africa</a></li>
+          <li><a href="north-africa.html">North Africa</a></li>
+          <li><a href="east-africa.html">East Africa</a></li>
+          <li><a href="about.html" aria-current="page">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="page-hero">
+      <div class="container">
+        <h1>About Us</h1>
+        <p>Why we celebrate African food, and where it comes from.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section aria-labelledby="mission-title">
+        <h2 id="mission-title">Our mission</h2>
+        <blockquote class="mission">
+          Our mission is to promote and protect African food heritage by sharing its recipes, ingredients and stories with the world.
+        </blockquote>
+        <p>African food is often reduced to a few dishes, yet the continent is home to thousands of cooking traditions. This website is a small step towards showing that variety: every recipe comes with its history, its main <mark>ingredients</mark> and a video so that anyone can try it at home.</p>
+      </section>
+
+      <section aria-labelledby="history-title">
+        <h2 id="history-title">A short history of African cuisine</h2>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Ancient roots</h3>
+            <p>Many of Africa's staple crops were first farmed on the continent, including <mark>sorghum</mark>, pearl millet, <mark>teff</mark>, yams and cowpeas. These grains and tubers still feed millions of people today.</p>
+            <h3>Trade and exchange</h3>
+            <p>Trade routes across the Sahara and the Indian Ocean brought spices, new techniques and ideas. Later, crops from the Americas such as <mark>maize</mark>, <mark>cassava</mark>, tomatoes, chili peppers and groundnuts became central to many African dishes.</p>
+          </div>
+          <div class="panel">
+            <h3>A global influence</h3>
+            <p>African cooks, farmers and food traditions travelled around the world, including across the Atlantic, and helped shape cuisines in the Americas and the Caribbean. Today, African chefs and home cooks are bringing their own cuisines onto the world stage.</p>
+            <h3>Food as culture</h3>
+            <p>In Africa, a meal is more than food. It is a way of welcoming guests, marking celebrations and passing stories from one generation to the next.</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-labelledby="landmark-title">
+        <h2 id="landmark-title">A food landmark: Jemaa el-Fnaa, Marrakech</h2>
+        <p>Every evening, Jemaa el-Fnaa square in Marrakech, Morocco, fills with food stalls serving grilled meats, soups, fresh juices and sweets. It is one of Africa's most famous places to taste local food.</p>
+        <div class="map"><iframe src="https://www.google.com/maps?q=Jemaa+el-Fnaa%2C+Marrakech%2C+Morocco&amp;output=embed" title="Map of Jemaa el-Fnaa square in Marrakech, Morocco" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Tastes of Africa</h2>
+          <p>Celebrating the flavours, ingredients and stories of African food. A student web project.</p>
+          <p><a href="recipes.html">Recipes</a> &middot; <a href="about.html">About us</a> &middot; <a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form">
+            <div class="field-wrap">
+              <label for="newsletter-email">Your email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" role="status"></p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>

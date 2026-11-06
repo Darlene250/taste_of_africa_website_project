@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Injera | Tastes of Africa</title>
+  <meta name="description" content="How to cook Injera from Ethiopia: ingredients, steps and video.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Tastes of Africa</a>
+      <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+          <li><a href="west-africa.html">West Africa</a></li>
+          <li><a href="north-africa.html">North Africa</a></li>
+          <li><a href="east-africa.html">East Africa</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-tools">
+        <button type="button" id="theme-toggle" class="icon-btn" aria-pressed="false">Dark mode</button>
+        <button type="button" id="menu-toggle" class="icon-btn menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <article class="recipe">
+        <section>
+          <p class="breadcrumb"><a href="recipes.html">Recipes</a> &rsaquo; Injera</p>
+          <div class="recipe-head">
+            <div>
+              <h1>Injera</h1>
+              <p>East Africa &middot; Ethiopia</p>
+            </div>
+            <button type="button" class="fav-btn" data-id="injera" aria-pressed="false"><span class="heart" aria-hidden="true">&hearts;</span> Favorite</button>
+          </div>
+          <figure class="recipe-hero">
+            <img src="https://img.youtube.com/vi/otZiMj68P1g/hqdefault.jpg" alt="Injera, an Ethiopian flatbread made from teff" width="480" height="360">
+            <figcaption>Injera, a dish from Ethiopia.</figcaption>
+          </figure>
+        </section>
+
+        <section aria-labelledby="about-title">
+          <h2 id="about-title">About this dish</h2>
+          <p>Injera is a spongy, slightly sour flatbread that is the heart of Ethiopian and Eritrean meals. It is made from <mark>teff</mark>, a tiny and very nutritious grain, mixed with water and left to ferment for a day or more. Diners tear off pieces of injera and use them to scoop up stews called <mark>wat</mark>, so the bread is both the plate and the spoon.</p>
+        </section>
+
+        <section class="recipe-layout" aria-label="Facts and ingredients">
+          <div class="panel">
+            <table>
+              <caption>Quick facts</caption>
+              <thead>
+                <tr><th scope="col">Detail</th><th scope="col">Information</th></tr>
+              </thead>
+              <tbody>
+            <tr><th scope="row">Region</th><td>East Africa</td></tr>
+            <tr><th scope="row">Country</th><td>Ethiopia</td></tr>
+            <tr><th scope="row">Main ingredient</th><td>Teff flour</td></tr>
+            <tr><th scope="row">Cooking time</th><td>20 minutes cooking, plus 1 to 3 days of fermenting</td></tr>
+            <tr><th scope="row">Serves</th><td>4 people</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="panel">
+            <h2>Ingredients</h2>
+            <div class="servings">
+              <label for="servings">Servings:</label>
+              <input type="number" id="servings" min="1" max="20" value="4" inputmode="numeric">
+            </div>
+            <ul class="ingredients" id="ingredients" data-base-servings="4">
+            <li><span class="amount" data-base="2">2</span> cups teff flour</li>
+            <li><span class="amount" data-base="3">3</span> cups water, plus extra to thin the batter</li>
+            <li><span class="amount" data-base="0.5">0.5</span> tsp salt</li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="steps-title">
+          <h2 id="steps-title">Cooking instructions</h2>
+          <p>Click a step to open or close it.</p>
+          <details open>
+            <summary>Step 1: Make and ferment the batter</summary>
+            <ol>
+              <li>Whisk the teff flour and water together in a large bowl until there are no lumps.</li>
+              <li>Cover with a cloth and leave at room temperature for 24 to 72 hours, until bubbly and pleasantly sour.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Step 2: Prepare to cook</summary>
+            <ol>
+              <li>Pour off any water that has gathered on top and stir in the salt.</li>
+              <li>Add a little water if needed: the batter should be as thin as crepe batter.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Step 3: Cook the injera</summary>
+            <ol>
+              <li>Heat a large non-stick pan on medium heat without oil.</li>
+              <li>Pour in a thin layer of batter in a spiral from the outside to the centre.</li>
+              <li>Cover and cook for 2 to 3 minutes, until the surface is full of small holes and the edges lift. Do not flip it.</li>
+              <li>Let it cool on a clean cloth, then serve with stews.</li>
+            </ol>
+          </details>
+        </section>
+
+        <section aria-labelledby="video-title">
+          <h2 id="video-title">Watch how it is made</h2>
+          <div class="video"><iframe src="https://www.youtube-nocookie.com/embed/otZiMj68P1g" title="How to make injera Ethiopian flatbread video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+        </section>
+
+        <section aria-labelledby="origin-title">
+          <h2 id="origin-title">Where it comes from</h2>
+          <p>Injera is associated with Ethiopia in East Africa.</p>
+          <div class="map"><iframe src="https://www.google.com/maps?q=Addis+Ababa%2C+Ethiopia&amp;output=embed" title="Map of Addis Ababa, Ethiopia" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+        </section>
+
+        <nav class="recipe-nav" aria-label="Other recipes">
+          <a class="btn btn-outline" href="jollof-rice.html">&larr; Jollof Rice</a>
+          <a class="btn btn-outline" href="tagine.html">Chicken Tagine &rarr;</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h2>Tastes of Africa</h2>
+          <p>Celebrating the flavours, ingredients and stories of African food. A student web project.</p>
+          <p><a href="recipes.html">Recipes</a> &middot; <a href="about.html">About us</a> &middot; <a href="contact.html">Contact</a></p>
+        </div>
+        <div>
+          <h2>Newsletter</h2>
+          <form class="newsletter-form">
+            <div class="field-wrap">
+              <label for="newsletter-email">Your email address</label>
+              <input type="email" id="newsletter-email" name="newsletter-email" placeholder="you@example.com" required>
+            </div>
+            <button type="submit" class="btn">Subscribe</button>
+          </form>
+          <p class="newsletter-msg" role="status"></p>
+        </div>
+      </div>
+      <p class="copyright">&copy; 2026 Tastes of Africa. Built with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+</body>
+</html>
